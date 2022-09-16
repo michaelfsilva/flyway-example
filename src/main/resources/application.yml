@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        postgresql:
+            jdbcUrl: jdbc:postgresql://localhost:5432/postgres?currentSchema=public
+            username: postgres
+            password: postgres
+            driverClassName: org.postgresql.Driver
+        mysql:
+            jdbcUrl: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db
+            username: mysql
+            password: mysql
+            driverClassName: com.mysql.cj.jdbc.Driver
+
+# desconsidera os scripts V0 e V1
+#    flyway:
+#        baseline-on-migrate: true
